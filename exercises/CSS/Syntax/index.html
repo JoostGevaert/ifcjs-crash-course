@@ -1,13 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IFC.js</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Hello World!</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      li {
+        font-family: monospace;
+      }
+    </style>
+    <title>CSS Syntax</title>
+  </head>
+  <body>
+    <h2>Hello style from a CSS file!</h2>
+    <p>
+      Cascading Style Sheets (CSS) are files that prescribe the style of HTML
+      elements. A CSS file is linked, i.e. imported into an HTML document by
+      adding the &lt;link/&gt; tag to the &lt;head&gt;&lt;/head&gt; of an HTML
+      document, in which the style.css referenced.
+    </p>
+    <h2>Hello style from the &lt;style&gt;&lt;/style&gt; HTML element!</h2>
+    <p>
+      Cascading Style Sheets (CSS) are files that prescribe the style of HTML
+      elements. A CSS file is linked, i.e. imported into an HTML document by
+      adding the &lt;link/&gt; tag to the &lt;head&gt;&lt;/head&gt; of an HTML
+      document, in which the style.css referenced.
+    </p>
+    <h2 style="color: red">Hello style with inline CSS!</h2>
+    <p style="color: slategrey; font-family: serif">
+      <a
+        href="https://www.freecodecamp.org/news/inline-css-guide-how-to-style-an-html-tag-directly/"
+        >Styling HTML using inline CSS</a
+      >
+      is done by adding CSS to the style= attribute of an HTML element. Inline
+      CSS overwrites CSS styling that is defined in the linked style.css.
+    </p>
+    <h2>CSS style hierarchy</h2>
+    <p>
+      CSS style has a hierarchy, i.e. style from the CSS file is overwritten by
+      style in the &lt;style&gt;&lt;/style&gt; HTML element, which in turn is
+      overwritten by inline CSS.
+    </p>
+    <p>Style from:</p>
+    <ol>
+      <li style="font-family: 'Arial Narrow', sans-serif">inline CSS</li>
+      <li>&lt;style&gt;&lt;/style&gt; HTML element</li>
+      <li>style.css file</li>
+    </ol>
+  </body>
 </html>
