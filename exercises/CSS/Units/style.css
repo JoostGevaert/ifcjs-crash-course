@@ -1,13 +1,12 @@
-h1{
-    width: 5rem;
-    color: blue;
+.first {
+  font-size: 5rem;
+  color: blue;
 }
-h2{
-    width: 50%;
-    color: red;
+.second {
+  font-size: 2em;
+  color: red;
 }
-h3{
-    width: 800px;
-    color: orange;
+.third {
+  font-size: 800px;
+  color: orange;
 }
-
