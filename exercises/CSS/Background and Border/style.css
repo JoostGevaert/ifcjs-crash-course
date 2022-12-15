@@ -1,20 +1,35 @@
-body{
-    background-color: #7DBBC3;
-    font-family: 'Roboto', sans-serif;
-}
-h1{
-    background-color: #080F0F;
-    border-width: 3px;
-    width: 25%;
-    border-style: solid;
-    border-color: #FFD400;
-    text-align: center;
-    color: #FFD400;
-    border-radius: 5px;
+body {
+  background-color: #7dbbc3;
+  background-image: url("https://avatars.githubusercontent.com/u/85238223?s=200&v=4");
+  background-repeat: no-repeat;
+  background-size: 5rem;
+  background-position: top right;
+  background-attachment: fixed;
+  font-family: "Roboto", sans-serif;
 }
 
-#box-3{
-    border: 1px solid;
-    border-color: black;
-    color: rgb(7, 7, 7);
+h1 {
+  background-color: #080f0f;
+  border-width: 3px;
+  width: 25%;
+  border-style: solid;
+  border-color: gold;
+  text-align: center;
+  color: gold;
+  border-radius: 5px;
+}
+
+h2 {
+	/* Shorthand CSS */
+	/* https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties */
+	padding: 0.2rem;
+  border: 5px solid gold;
+	border-radius: 0rem 1em 1em 0.5rem;
+}
+
+#box-3 {
+  border: 1px solid;
+  border-color: black;
+  color: rgb(7, 7, 7);
+  /* color: hsla(hue, saturation, lightness, alpha); */
 }
