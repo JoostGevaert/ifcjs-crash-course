@@ -1,5 +1,8 @@
 *, *::before, *::after{
-
+    /* Not all browsers have the same default margin and padding values. */
+    margin: 0;
+    padding: 0;
+    /* This setting ensures that the size is considered outside the margin */
     box-sizing: border-box;
 }
 
@@ -7,16 +10,16 @@ body{
     background-color: #7DBBC3;
     font-family: 'Roboto', sans-serif;
 }
+
 h1{
     background-color: #080F0F;
     border-width: 3px;
-    width: 20%;
     border-style: solid;
     border-color: #FFD400;
     text-align: center;
     color: #FFD400;
     border-radius: 5px;
-    margin-left: 5%;
+    margin: 5%;
     padding: 1% 1%;
 
 
