@@ -1,0 +1,229 @@
+#view {
+  width: 350px;
+  height: 250px;
+  margin: 80px auto 0 auto;
+}
+
+/* #cube */
+/* #cube */
+/* Define the dimensions of the cube */
+#cube {
+  width: 100px;
+  height: 100px;
+
+  /* Enable 3D rendering */
+  transform-style: preserve-3d;
+
+  /* Define the perspective */
+  perspective: 500px;
+}
+
+/* Define the individual sides of the cube */
+.side {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+
+/* Style the front face */
+#front {
+  background-color: red;
+  transform: translateZ(50px);
+}
+
+/* Style the right face */
+#right {
+  background-color: green;
+  transform: rotateY(90deg) translateZ(50px);
+}
+
+/* Style the back face */
+#back {
+  background-color: blue;
+  transform: rotateY(180deg) translateZ(50px);
+}
+
+/* Style the left face */
+#left {
+  background-color: yellow;
+  transform: rotateY(-90deg) translateZ(50px);
+}
+
+/* Style the top face */
+#top {
+  background-color: orange;
+  transform: rotateX(90deg) translateZ(50px);
+}
+
+/* Style the bottom face */
+#bottom {
+  background-color: purple;
+  transform: rotateX(-90deg) translateZ(50px);
+}
+
+/* Define the rotation animation */
+@keyframes spin {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+/* Apply the animation to the cube */
+#cube {
+  animation: spin 6s infinite linear;
+}
+
+
+/* #icosahedron */
+/* #icosahedron */
+
+#icosahedron div {
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  border: 1px solid lightgrey;
+  background: rgba(255, 200, 100, 0.8);
+  text-align: center;
+  font-size: 200px;
+}
+
+#icosahedron {
+  -webkit-animation-name: animation;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 15s;
+  margin: 80;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform-origin: 125px 125px 0;
+}
+
+#icosahedron .one {
+  background-color: #9edae5;
+  -webkit-transform: rotateX(-70deg) rotateY(-70deg) translateZ(125px);
+}
+#icosahedron .two {
+  background-color: #17becf;
+  -webkit-transform: rotateX(-70deg) rotateY(70deg) translateZ(125px);
+}
+#icosahedron .three {
+  background-color: #dbdb8d;
+  -webkit-transform: rotateX(-70deg) rotateY(70deg) rotateZ(70deg)
+    translateZ(125px);
+}
+#icosahedron .four {
+  background-color: #bcbd22;
+  -webkit-transform: rotateX(-70deg) rotateY(-70deg) rotateZ(70deg)
+    translateZ(125px);
+}
+#icosahedron .five {
+  background-color: #c7c7c7;
+  -webkit-transform: rotateX(-70deg) rotateY(180deg) translateZ(125px);
+}
+#icosahedron .six {
+  background-color: #7f7f7f;
+  -webkit-transform: rotateX(70deg) rotateY(-70deg) translateZ(125px);
+}
+#icosahedron .seven {
+  background-color: #f7b6d2;
+  -webkit-transform: rotateX(70deg) rotateY(70deg) translateZ(125px);
+}
+#icosahedron .eight {
+  background-color: #e377c2;
+  -webkit-transform: rotateX(70deg) rotateY(70deg) rotateZ(70deg)
+    translateZ(125px);
+}
+#icosahedron .nine {
+  background-color: #c49c94;
+  -webkit-transform: rotateX(70deg) rotateY(-70deg) rotateZ(70deg)
+    translateZ(125px);
+}
+#icosahedron .ten {
+  background-color: #8c564b;
+  -webkit-transform: rotateX(70deg) rotateY(180deg) translateZ(125px);
+}
+#icosahedron .eleven {
+  background-color: #c5b0d5;
+  -webkit-transform: rotateX(180deg) translateZ(125px);
+}
+#icosahedron .twelve {
+  background-color: #9467bd;
+  -webkit-transform: rotateX(180deg) rotateZ(70deg) translateZ(125px);
+}
+
+/* background-color: #ff9896;
+background-color: #d62728;
+background-color: #98df8a;
+background-color: #2ca02c;
+background-color: #ffbb78;
+background-color: #ff7f0e;
+background-color: #aec7e8;
+background-color: #1f77b4; */
+
+@-webkit-keyframes animation {
+  from,
+  to {
+  }
+  16% {
+    -webkit-transform: rotateY(-90deg);
+  }
+  33% {
+    -webkit-transform: rotateY(-90deg) rotateZ(135deg);
+  }
+  50% {
+    -webkit-transform: rotateY(225deg) rotateZ(135deg);
+  }
+  66% {
+    -webkit-transform: rotateY(135deg) rotateX(135deg);
+  }
+  83% {
+    -webkit-transform: rotateX(135deg);
+  }
+}
+
+
+/* #tetrahedron */
+/* #tetrahedron */
+
+#tetrahedron {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+
+#tetrahedron:before,
+#tetrahedron:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+}
+
+#tetrahedron:before {
+  border-bottom-color: red;
+  top: 0;
+  left: 50px;
+}
+
+#tetrahedron:after {
+  border-top-color: blue;
+  bottom: 0;
+  left: 50px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate3d(1, 1, 1, 0deg);
+  }
+  to {
+    transform: rotate3d(1, 1, 1, 360deg);
+  }
+}
+
+#tetrahedron {
+  animation: spin 2s linear infinite;
+}

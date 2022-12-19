@@ -1,74 +1,7 @@
-.cube {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  margin: auto;
-  transform-style: preserve-3d;
-  animation: spin 10s linear infinite;
-}
-
-.cube:before,
-.cube:after {
-  content: "";
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  background-color: blue;
-  transform-origin: 50% 50% 0;
-}
-
-.cube:before {
-  transform: translateZ(100px);
-}
-
-.cube:after {
-  transform: rotateY(90deg) translateZ(100px);
-}
-
-@keyframes spin {
-  from {
-    transform: rotateX(-360deg) rotateY(-360deg) rotateZ(-360deg);
-  }
-  to {
-    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
-  }
-}
-
-.icosahedron {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  margin: auto;
-  transform-style: preserve-3d;
-  animation: spin 10s linear infinite;
-}
-
-.icosahedron:before,
-.icosahedron:after {
-  content: "";
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background-color: gold;
-  transform-origin: 50% 50% 0;
-}
-
-.icosahedron:before {
-  transform: rotateZ(72deg) rotateY(144deg);
-}
-
-.icosahedron:after {
-  transform: rotateZ(144deg) rotateY(72deg);
-}
-
-@keyframes spin {
-  from {
-    transform: rotateX(-360deg) rotateY(-360deg) rotateZ(-360deg);
-  }
-  to {
-    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
-  }
+#view {
+  width: 350px;
+  height: 250px;
+  margin: 150px auto 0 auto;
 }
 
 #box div {
@@ -85,7 +18,7 @@
   -webkit-animation-name: animation;
   -webkit-animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: infinite;
-  -webkit-animation-duration: 6s;
+  -webkit-animation-duration: 15s;
   margin: 80;
   -webkit-transform-style: preserve-3d;
   -webkit-transform-origin: 125px 125px 0;
