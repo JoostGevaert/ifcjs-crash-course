@@ -1,0 +1,7 @@
+.general-container {
+  background-color: aquamarine;
+  flex-flow: column;
+}
+.container {
+  width: 90vw;
+}
