@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  margin: 2rem;
+}
+
+.border {
+  border: 1px solid black
+}
+
+.box {
+  height: 6.25rem;
+  width: 6.25rem;
+}
+
+.positioned {
+  position: relative;
+  top: 1rem;
+  left: 1rem;
+  background-color: red;
+}
